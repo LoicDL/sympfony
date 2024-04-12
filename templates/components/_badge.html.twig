@@ -1,0 +1,3 @@
+{% for categ in categorie %}
+    <span class="badge text-bg-dark"><a href="{{ path('app_categorie', { id:categ.id })}}">{{ categ.title }}</a></span>
+{% endfor %}

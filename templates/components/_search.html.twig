@@ -1,0 +1,8 @@
+{% block body %}
+    {% if form  %}
+        {{ form_start(form, {'attr':{'data-turbo':'false'}}) }}
+            {{ form_widget(form.query) }}
+            {{ form_widget(form.categories) }}
+        {{ form_end(form) }}
+    {% endif %}
+{% endblock %}
